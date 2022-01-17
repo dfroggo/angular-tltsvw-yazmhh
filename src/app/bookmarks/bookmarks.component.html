@@ -1,0 +1,9 @@
+<h3>Bookmarks</h3>
+
+<div class="cart-item" *ngFor="let item of items">
+  <h3>
+    <a [title]="item.name + ' details'" [routerLink]="['/products', item.id]">
+      {{ item.name }}
+    </a>
+  </h3>
+</div>
